@@ -96,6 +96,9 @@ body {
     text-align: center;
     color: black;
   }
+  .headtitle1:hover{
+    color: #C53929;
+  }
 
   @media screen and (max-width: 480px) {
     .headtitle1ll {
@@ -165,5 +168,9 @@ height: 5vh;
       width: 90%;
     }
   }
+  .google-icon {
+    color: #4285F4;
+    transition: color 0.3s ease-in-out;
+  }
 
-  /* Add additional styles and animations as needed */
+  

@@ -71,7 +71,7 @@ function Oauth() {
              !signedIn?(
 
 <>
-<h1 className='headtitle1'>SIGN IN  WITH GOOGLE  <FontAwesomeIcon icon={faGoogle} style={{ color: '#4285F4', marginLeft: '1rem' }} /> </h1>
+<h1 className='headtitle1'>SIGN IN  WITH GOOGLE  <FontAwesomeIcon className='google-icon' icon={faGoogle} style={{ color: '#4285F4', marginLeft: '1rem' }} /> </h1>
 <div className='container'>
 <h1 className='headtitle1'>EVENTS CALENDER</h1>
                <GoogleLogin className='googleLogin'
