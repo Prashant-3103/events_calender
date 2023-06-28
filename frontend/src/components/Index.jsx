@@ -4,6 +4,11 @@ import { GoogleLogin } from '@leecheuk/react-google-login'
 import axios from 'axios'
 import { useState } from 'react';
 import {gapi} from 'gapi-script'
+import {fab} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+
+
 
 import '../components/Css/Index.css'
 
@@ -65,9 +70,10 @@ function Oauth() {
 
              !signedIn?(
 
-
-  <div className='container'>
-                    <h1 className='headtitle1'>EVENTS CALENDER</h1>
+<>
+<h1 className='headtitle1'>SIGN IN  WITH GOOGLE  <FontAwesomeIcon icon={faGoogle} style={{ color: '#4285F4', marginLeft: '1rem' }} /> </h1>
+<div className='container'>
+<h1 className='headtitle1'>EVENTS CALENDER</h1>
                <GoogleLogin className='googleLogin'
                clientId='962955475292-vhhhhcjh7g8j8cgg6hbekuvso45e9nbq.apps.googleusercontent.com'
                buttonText='sign in and authorize calandar'
@@ -80,6 +86,7 @@ function Oauth() {
                scope='openid email profile https://www.googleapis.com/auth/calendar'
                />
              </div>
+</>
 
              ):
              ( <div>

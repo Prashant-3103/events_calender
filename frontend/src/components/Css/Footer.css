@@ -108,3 +108,28 @@
 .sb_footer-copyright{
     color: white;
 }
+
+@media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    ul {
+      flex-direction: row;
+      gap: 5px;
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+  .footer-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    list-style: none;
+
+  }
