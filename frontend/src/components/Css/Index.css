@@ -7,25 +7,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
     background-color:lavender;
     font-family: 'Poppins', sans-serif;
 
   }
 
   .container {
-   width: 100%;
+   width: 40%;
+   margin-top: 10%;
+   margin-left: 30%;
     padding: 20px;
     background-color:#e6e6e6;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   }
 
   h1 {
     text-align: center;
     color: black;
 
-    animation: pulsate 1s infinite;
+    /* animation: pulsate 1s infinite; */
   }
 
   @keyframes pulsate {
@@ -49,6 +52,7 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border: none;
+    margin-top: 30%;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;

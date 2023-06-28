@@ -4,6 +4,7 @@ import { GoogleLogin } from '@leecheuk/react-google-login'
 import axios from 'axios'
 import { useState } from 'react';
 import {gapi} from 'gapi-script'
+
 import '../components/Css/Index.css'
 
 
@@ -63,8 +64,9 @@ function Oauth() {
            {
 
              !signedIn?(
-<>
-              <div className='container'>
+
+
+  <div className='container'>
                     <h1 className='headtitle1'>EVENTS CALENDER</h1>
                <GoogleLogin className='googleLogin'
                clientId='962955475292-vhhhhcjh7g8j8cgg6hbekuvso45e9nbq.apps.googleusercontent.com'
@@ -77,7 +79,9 @@ function Oauth() {
                accessType='offline'
                scope='openid email profile https://www.googleapis.com/auth/calendar'
                />
-             </div></>):
+             </div>
+
+             ):
              ( <div>
               <h1 className='headtitle1'>CREATE EVENTS</h1>
                <form onSubmit={handleSubmit}>

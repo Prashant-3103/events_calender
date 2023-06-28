@@ -1,0 +1,41 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+.home_title {
+    text-align: center;
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  .home_para {
+text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+    margin-bottom: 2rem;
+    max-width: 60%;
+
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
